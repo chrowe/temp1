@@ -4,6 +4,7 @@
 1. Download OS using Raspberry Pi Imager: https://www.raspberrypi.com/software/
 2. Use "Raspberry Pi OS Lite" (no desktop)
 3. Use https://connect.raspberrypi.com for remote access
+4. Run `sudo apt update && sudo apt upgrade`
 
 ## Setup
 You have to do steps 0+1 if you want to contribute back to Github from the Pi. Otherwise you can just copy the `setup.sh` script to the Pi and run it.
