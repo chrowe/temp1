@@ -10,6 +10,11 @@ sudo systemctl status nodered.service
 
 hostname -I
 
-sudo raspi-config
+sudo echo "dtoverlay=w1-gpio" | sudo tee -a /boot/firmware/config.txt
 
 lsmod | grep -i w1_
+
+sudo modprobe w1-gpio
+sudo modprobe w1-therm
+
+reboot
